@@ -1,0 +1,157 @@
+<div class="row-layout admin-container">
+  <div class="column-layout admin-configuration-panel">
+    <div class="column-layout header-section">
+      <h3 class="title-usxz-5k">
+        System Admin &amp; Language Catalog
+      </h3>
+      <p class="text-dw-0haf">
+        Configure regional AI engines, download offline voice packs, view storage status, and manage the dialect support table.
+      </p>
+    </div>
+    <div class="row-layout sync-kpis">
+      <igx-card class="offline-cache">
+        <igx-card-header>
+          <div igxCardThumbnail>
+            <igx-avatar shape="circle" class="av-1 av-1_1">
+              <igx-icon class="icon">
+                folder
+              </igx-icon>
+            </igx-avatar>
+          </div>
+          <h3 igxCardHeaderTitle>
+            Local Cached Lessons
+          </h3>
+          <h5 igxCardHeaderSubtitle>
+            Subtitle goes here...
+          </h5>
+        </igx-card-header>
+        <igx-card-content>
+          <div class="column-layout column-layout-yioio">
+            <h3 class="content">
+              42 / 50 Packs
+            </h3>
+            <p class="ig-typography__body-2 content">
+              Storage size: 284 MB (IndexedDB)
+            </p>
+          </div>
+        </igx-card-content>
+      </igx-card>
+      <igx-card class="offline-cache">
+        <igx-card-header>
+          <div igxCardThumbnail>
+            <igx-avatar shape="circle" class="av-2 av-2_1">
+              <igx-icon class="icon_1">
+                cloud_upload
+              </igx-icon>
+            </igx-avatar>
+          </div>
+          <h3 igxCardHeaderTitle>
+            Pending Sync Queue
+          </h3>
+          <h5 igxCardHeaderSubtitle>
+            Subtitle goes here...
+          </h5>
+        </igx-card-header>
+        <igx-card-content>
+          <div class="column-layout column-layout-yioio">
+            <h3 class="content">
+              3 Pending Uploads
+            </h3>
+            <p class="ig-typography__body-2 content">
+              Offline student grades synced locally
+            </p>
+          </div>
+        </igx-card-content>
+      </igx-card>
+      <igx-card class="offline-cache">
+        <igx-card-header>
+          <div igxCardThumbnail>
+            <igx-avatar shape="circle">
+              <igx-icon>
+                network_ping
+              </igx-icon>
+            </igx-avatar>
+          </div>
+          <h3 igxCardHeaderTitle>
+            P2P Mesh Network Nodes
+          </h3>
+          <h5 igxCardHeaderSubtitle>
+            Subtitle goes here...
+          </h5>
+        </igx-card-header>
+        <igx-card-content>
+          <div class="column-layout p-2p-kpi-layout">
+            <h3 class="content">
+              24 Peers Active
+            </h3>
+            <p class="ig-typography__body-2 content">
+              Local mesh hop path latency: 12ms
+            </p>
+          </div>
+        </igx-card-content>
+      </igx-card>
+    </div>
+    <div class="column-layout dialects-grid">
+      <h5 class="content">
+        State Vernacular Language Catalog (Jharkhand Regional Dialects)
+      </h5>
+      <igx-grid [data]="northwindEmployees" primaryKey="employeeID" [allowFiltering]="true" filterMode="excelStyleFilter" class="languages-grid">
+        <igx-column field="Language" header="Dialect Name" [filterable]="true" [sortable]="true" [selectable]="false"></igx-column>
+        <igx-column field="SpeechToText" header="Speech-to-Text Status" [filterable]="true" [sortable]="true" [selectable]="false"></igx-column>
+        <igx-column field="TextToSpeech" header="AI Voice Output Support" [filterable]="true" [sortable]="true" [selectable]="false"></igx-column>
+        <igx-column field="Translation" header="Translation Layer Engine" [filterable]="true" [sortable]="true" [selectable]="false"></igx-column>
+        <igx-column field="OfflineAvailability" header="Offline Storage Status" [filterable]="true" [sortable]="true" [selectable]="false"></igx-column>
+      </igx-grid>
+    </div>
+    <div class="row-layout action-generators">
+      <div class="column-layout worksheet-generator">
+        <h5 class="content">
+          Offline Worksheet Generator
+        </h5>
+        <p class="ig-typography__body-2 content">
+          Export regional dialect alphabets, matching activities, and coloring worksheets directly to print for schools with zero electricity.
+        </p>
+        <igx-select type="border" placeholder="Santali (Ol Chiki)" class="user-input">
+          <igx-select-item value="1">
+            Santali (Ol Chiki)
+          </igx-select-item>
+          <igx-select-item value="2">
+            Mundari
+          </igx-select-item>
+          <igx-select-item value="3">
+            Ho
+          </igx-select-item>
+          <label igxLabel>Target Dialect</label>
+        </igx-select>
+        <button igxButton="contained" type="button" class="button-1-4t-6-6u">
+          <igx-icon class="icon_2">
+            picture_as_pdf
+          </igx-icon>
+          <span>Generate Printable PDF</span>
+        </button>
+      </div>
+      <div class="column-layout worksheet-generator">
+        <h5 class="content">
+          Secure Engine Configurations
+        </h5>
+        <p class="ig-typography__body-2 content">
+          Configure environment variables and gateway integrations securely when internet is available.
+        </p>
+        <igx-input-group type="box" class="user-input">
+          <input type="text" [(ngModel)]="value" placeholder="••••••••••••••••" disabled="true" igxInput />
+          <label igxLabel>Translation API Key</label>
+        </igx-input-group>
+        <igx-input-group type="box" class="user-input">
+          <input type="text" [(ngModel)]="value1" placeholder="https://zoho-creator.secure-api.jh/" disabled="true" igxInput />
+          <label igxLabel>Speech Endpoint Gateway</label>
+        </igx-input-group>
+        <button igxButton="outlined" type="button" class="button-l-5zjib">
+          <igx-icon>
+            save
+          </igx-icon>
+          <span>Save Security Settings</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,190 @@
+<div class="row-layout classroom-container">
+  <div class="column-layout classroom-content">
+    <div class="row-layout header-section">
+      <div class="column-layout title-block">
+        <h3 class="title-c-3a-9-2s">
+          Classroom Code &amp; Lesson Hub
+        </h3>
+        <p class="text-k-9spvh">
+          Launch secure offline-sharing routers, distribute local vernacular lesson packages, and register live connected child tablets.
+        </p>
+      </div>
+      <div class="row-layout header-actions">
+        <button igxButton="contained" type="button" class="button-djma-6j">
+          <igx-icon class="icon">
+            router
+          </igx-icon>
+          <span>Generate Local Code</span>
+        </button>
+        <button igxButton="outlined" type="button" class="button-sh-7p-0i">
+          <igx-icon>
+            share
+          </igx-icon>
+          <span>Share Lesson Pack</span>
+        </button>
+      </div>
+    </div>
+    <div class="row-layout management-panels">
+      <igx-card class="room-code-info">
+        <igx-card-header>
+          <h3 igxCardHeaderTitle>
+            Active Classroom: Khunti-Munda-01
+          </h3>
+          <h5 igxCardHeaderSubtitle>
+            Local PWA Hub Sync
+          </h5>
+        </igx-card-header>
+        <igx-card-content>
+          <div class="column-layout column-layout-5rqzzi">
+            <div class="column-layout code-large-text">
+              <p class="ig-typography__overline content">
+                STUDENTS JOIN CODE
+              </p>
+              <h1 class="title-hf-0ekc">
+                MUNDA90
+              </h1>
+            </div>
+            <div class="row-layout local-hotspot-info">
+              <igx-icon class="icon-hp-8cn">
+                wifi
+              </igx-icon>
+              <p class="ig-typography__body-2 content">
+                Broadcasting on Offline Raspberry Pi Wi-Fi Hotspot
+              </p>
+            </div>
+            <igx-switch [(ngModel)]="checked" class="switch-wotzgc">
+              Broadcast Offline Lesson Materials
+            </igx-switch>
+            <igx-switch class="switch-wotzgc">
+              Lock Assessment Session
+            </igx-switch>
+          </div>
+        </igx-card-content>
+        <igx-card-actions>
+          <ng-container igxStart></ng-container>
+          <ng-container igxEnd></ng-container>
+        </igx-card-actions>
+      </igx-card>
+      <div class="column-layout live-connected-tablets">
+        <h5 class="content">
+          Live Connected Tablets (Local Offline Area Network)
+        </h5>
+        <igx-list class="list-oml-1t">
+          <igx-list-item [selected]="this.listOml1tSelectedItem != null && this.listOml1tSelectedItem === '0'" (click)="listOml1tSelectedItem = '0'">
+            <span igxListThumbnail>
+              <igx-avatar shape="circle" class="avatar-2-6w-7xd avatar-2-6w-7xd_1">
+                <igx-icon class="icon_1">
+                  tablet_mac
+                </igx-icon>
+              </igx-avatar>
+            </span>
+            <span igxListLineTitle>Birsa Munda (Tablet #4)</span>
+            <span igxListLineSubTitle>Lesson Module: Mundari Numbers - Finished Assessment</span>
+            <span igxListAction>
+              <igx-icon class="icon-hp-8cn">
+                cloud_done
+              </igx-icon>
+            </span>
+          </igx-list-item>
+          <igx-list-item [selected]="this.listOml1tSelectedItem != null && this.listOml1tSelectedItem === '1'" (click)="listOml1tSelectedItem = '1'">
+            <span igxListThumbnail>
+              <igx-avatar shape="circle" class="avatar-d-6-1rm avatar-d-6-1rm_1">
+                <igx-icon class="icon_2">
+                  tablet_mac
+                </igx-icon>
+              </igx-avatar>
+            </span>
+            <span igxListLineTitle>Sita Soren (Tablet #7)</span>
+            <span igxListLineSubTitle>Lesson Module: Animals Vocabulary - Practice in progress</span>
+            <span igxListAction>
+              <igx-icon class="icon-as-9asq">
+                sync
+              </igx-icon>
+            </span>
+          </igx-list-item>
+          <igx-list-item [selected]="this.listOml1tSelectedItem != null && this.listOml1tSelectedItem === '2'" (click)="listOml1tSelectedItem = '2'">
+            <span igxListThumbnail>
+              <igx-avatar shape="circle" class="avatar-ahxaai avatar-ahxaai_1">
+                <igx-icon class="icon_3">
+                  tablet_mac
+                </igx-icon>
+              </igx-avatar>
+            </span>
+            <span igxListLineTitle>Jaipal Singh (Tablet #1)</span>
+            <span igxListLineSubTitle>Awaiting local Wi-Fi pairing code</span>
+            <span igxListAction>
+              <igx-icon class="icon-asdhai">
+                wifi_off
+              </igx-icon>
+            </span>
+          </igx-list-item>
+        </igx-list>
+      </div>
+      <igx-card class="room-code-info">
+        <igx-card-header>
+          <div igxCardThumbnail>
+            <igx-avatar shape="circle">
+              <igx-icon>
+                router
+              </igx-icon>
+            </igx-avatar>
+          </div>
+          <h3 igxCardHeaderTitle>
+            P2P Wi-Fi Routing &amp; Sync Hub
+          </h3>
+          <h5 igxCardHeaderSubtitle>
+            Direct Device-to-Device Mesh (Zero Internet)
+          </h5>
+        </igx-card-header>
+        <igx-card-content>
+          <div class="column-layout column-layout-5rqzzi">
+            <p class="ig-typography__body-2 content">
+              Route lessons and collect assessment sync logs dynamically from teacher to students via localized high-speed WiFi networks.
+            </p>
+            <div class="column-layout bar-wrapper">
+              <p class="ig-typography__caption content">
+                Local Mesh Sync Progress (42 Tablets Connected)
+              </p>
+              <igx-linear-bar [value]="84" [animationDuration]="500" [striped]="true" textAlign="center" [textTop]="true" class="mesh-bar"></igx-linear-bar>
+            </div>
+            <igx-select type="border" placeholder="WiFi Direct Mesh" class="p-2p-protocol">
+              <igx-select-item value="1">
+                Wi-Fi Direct Peer-to-Peer
+              </igx-select-item>
+              <igx-select-item value="2">
+                Raspberry Pi Local Access Point
+              </igx-select-item>
+              <igx-select-item value="3">
+                Bluetooth LE Assist Mode
+              </igx-select-item>
+              <label igxLabel>Routing Sync Protocol</label>
+            </igx-select>
+            <igx-switch [(ngModel)]="checked1" class="switch-wotzgc">
+              Enable Multi-Hop Routing Relay
+            </igx-switch>
+            <igx-switch [(ngModel)]="checked2" class="switch-wotzgc">
+              Auto-Connect Nearest Peer Node
+            </igx-switch>
+          </div>
+        </igx-card-content>
+        <igx-card-actions>
+          <ng-container igxStart>
+            <button igxButton="contained" type="button" class="broadcast-btn">
+              <igx-icon>
+                cell_tower
+              </igx-icon>
+              <span>Force Mesh Sync</span>
+            </button>
+            <button igxButton="outlined" type="button" class="broadcast-btn">
+              <igx-icon>
+                settings_ethernet
+              </igx-icon>
+              <span>Mesh Topology</span>
+            </button>
+          </ng-container>
+          <ng-container igxEnd></ng-container>
+        </igx-card-actions>
+      </igx-card>
+    </div>
+  </div>
+</div>

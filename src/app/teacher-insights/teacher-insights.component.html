@@ -1,0 +1,197 @@
+<div class="row-layout insights-container">
+  <div class="column-layout insights-core">
+    <div class="column-layout page-title">
+      <h3 class="title-e-1klzh">
+        Teacher Insights &amp; Analytics
+      </h3>
+      <p class="text-c-4-2uw">
+        Monitor student oral fluency, lesson completion rates, and identify students needing direct vernacular support.
+      </p>
+    </div>
+    <div class="row-layout kpi-cards">
+      <igx-card class="total-students">
+        <igx-card-header>
+          <div igxCardThumbnail>
+            <igx-avatar shape="circle" class="avatar-1 avatar-1_1">
+              <igx-icon class="icon">
+                groups
+              </igx-icon>
+            </igx-avatar>
+          </div>
+          <h3 igxCardHeaderTitle>
+            Total Students
+          </h3>
+          <h5 igxCardHeaderSubtitle>
+            Subtitle goes here...
+          </h5>
+        </igx-card-header>
+        <igx-card-content>
+          <div class="column-layout column-layout-1x-7hjd">
+            <h3 class="content">
+              142
+            </h3>
+            <div class="row-layout comparison">
+              <p class="ig-typography__subtitle-2 title-6qcnz">
+                +8%
+              </p>
+              <p class="ig-typography__body-2 content">
+                vs last month
+              </p>
+            </div>
+          </div>
+        </igx-card-content>
+      </igx-card>
+      <igx-card class="total-students">
+        <igx-card-header>
+          <div igxCardThumbnail>
+            <igx-avatar shape="circle" class="avatar-2 avatar-2_1">
+              <igx-icon class="icon_1">
+                offline_bolt
+              </igx-icon>
+            </igx-avatar>
+          </div>
+          <h3 igxCardHeaderTitle>
+            Active Daily
+          </h3>
+          <h5 igxCardHeaderSubtitle>
+            Subtitle goes here...
+          </h5>
+        </igx-card-header>
+        <igx-card-content>
+          <div class="column-layout column-layout-1x-7hjd">
+            <h3 class="content">
+              118
+            </h3>
+            <div class="row-layout comparison">
+              <p class="ig-typography__subtitle-2 title-6qcnz">
+                92%
+              </p>
+              <p class="ig-typography__body-2 content">
+                daily participation
+              </p>
+            </div>
+          </div>
+        </igx-card-content>
+      </igx-card>
+      <igx-card class="total-students">
+        <igx-card-header>
+          <div igxCardThumbnail>
+            <igx-avatar shape="circle" class="avatar-3 avatar-3_1">
+              <igx-icon class="icon_2">
+                record_voice_over
+              </igx-icon>
+            </igx-avatar>
+          </div>
+          <h3 igxCardHeaderTitle>
+            Avg Fluency Score
+          </h3>
+          <h5 igxCardHeaderSubtitle>
+            Subtitle goes here...
+          </h5>
+        </igx-card-header>
+        <igx-card-content>
+          <div class="column-layout column-layout-1x-7hjd">
+            <h3 class="content">
+              84.2%
+            </h3>
+            <div class="row-layout comparison">
+              <p class="ig-typography__subtitle-2 title-6qcnz">
+                +3.5%
+              </p>
+              <p class="ig-typography__body-2 content">
+                matching accuracy
+              </p>
+            </div>
+          </div>
+        </igx-card-content>
+      </igx-card>
+      <igx-card class="total-students">
+        <igx-card-header>
+          <div igxCardThumbnail>
+            <igx-avatar shape="circle" class="avatar-4 avatar-4_1">
+              <igx-icon class="icon_3">
+                assignment_turned_in
+              </igx-icon>
+            </igx-avatar>
+          </div>
+          <h3 igxCardHeaderTitle>
+            Lessons Completed
+          </h3>
+          <h5 igxCardHeaderSubtitle>
+            Subtitle goes here...
+          </h5>
+        </igx-card-header>
+        <igx-card-content>
+          <div class="column-layout column-layout-1x-7hjd">
+            <h3 class="content">
+              78.5%
+            </h3>
+            <div class="row-layout comparison">
+              <p class="ig-typography__subtitle-2 title-6qcnz">
+                +5.1%
+              </p>
+              <p class="ig-typography__body-2 content">
+                vs state average
+              </p>
+            </div>
+          </div>
+        </igx-card-content>
+      </igx-card>
+    </div>
+    <div class="row-layout dashboard-statistics-section">
+      <div class="column-layout charts-wrapper">
+        <igx-category-chart [dataSource]="financialBoxOfficeRevenue" chartType="line" chartTitle="Weekly Average Performance (%)" xAxisTitle="Study Weeks" yAxisTitle="Avg Match Score" computedPlotAreaMarginMode="series" class="progress-chart"></igx-category-chart>
+        <igx-category-chart [dataSource]="financialBoxOfficeRevenue" chartType="column" chartTitle="Syllabus Difficulty Tracking" xAxisTitle="Syllabus Topic" yAxisTitle="Struggling Student Count" computedPlotAreaMarginMode="series" class="progress-chart"></igx-category-chart>
+      </div>
+      <div class="column-layout data-wrapper">
+        <h5 class="content">
+          Underperforming Students (Direct Support Needed)
+        </h5>
+        <igc-grid-lite [data]="northwindEmployees" class="struggling-students-grid">
+          <igc-grid-lite-column field="Name" header="Student Name" [filterable]="true" [sortable]="true"></igc-grid-lite-column>
+          <igc-grid-lite-column field="Class" header="Class" [filterable]="true" [sortable]="true"></igc-grid-lite-column>
+          <igc-grid-lite-column field="Dialect" header="Mother Tongue" [filterable]="true" [sortable]="true"></igc-grid-lite-column>
+          <igc-grid-lite-column field="FluencyScore" header="Oral Fluency" [filterable]="true" [sortable]="true"></igc-grid-lite-column>
+          <igc-grid-lite-column field="Status" header="Action" [filterable]="true" [sortable]="true"></igc-grid-lite-column>
+        </igc-grid-lite>
+        <h5 class="content">
+          Sync &amp; Module Alerts
+        </h5>
+        <igx-list class="list-asvvmn">
+          <igx-list-item [selected]="this.listAsvvmnSelectedItem != null && this.listAsvvmnSelectedItem === '0'" (click)="listAsvvmnSelectedItem = '0'">
+            <span igxListThumbnail>
+              <igx-avatar shape="circle" class="avatar-2-2y-2uk avatar-2-2y-2uk_1">
+                <igx-icon class="icon_4">
+                  sync_problem
+                </igx-icon>
+              </igx-avatar>
+            </span>
+            <span igxListLineTitle>Khunti Center Sync Pending</span>
+            <span igxListLineSubTitle>18 oral assessments stored locally awaiting PWA cloud upload</span>
+            <span igxListAction>
+              <igx-icon class="icon-m-3ijqa">
+                cloud_queue
+              </igx-icon>
+            </span>
+          </igx-list-item>
+          <igx-list-item [selected]="this.listAsvvmnSelectedItem != null && this.listAsvvmnSelectedItem === '1'" (click)="listAsvvmnSelectedItem = '1'">
+            <span igxListThumbnail>
+              <igx-avatar shape="circle" class="avatar-kjou-1 avatar-kjou-1_1">
+                <igx-icon class="icon_5">
+                  record_voice_over
+                </igx-icon>
+              </igx-avatar>
+            </span>
+            <span igxListLineTitle>Spoken Santali Pronunciation Dip</span>
+            <span igxListLineSubTitle>6 students struggling with the 'Ol Chiki script sound activities'</span>
+            <span igxListAction>
+              <igx-icon class="icon-m-3ijqa">
+                school
+              </igx-icon>
+            </span>
+          </igx-list-item>
+        </igx-list>
+      </div>
+    </div>
+  </div>
+</div>

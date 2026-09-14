@@ -1,0 +1,205 @@
+:host {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 16px 0;
+}
+.row-layout {
+  display: flex;
+}
+.insights-container {
+  justify-content: center;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 0;
+  position: relative;
+  padding: 32px;
+  min-width: 50px;
+  min-height: 50px;
+  flex-shrink: 0;
+}
+.column-layout {
+  display: flex;
+  flex-direction: column;
+}
+.insights-core {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 24px 0;
+  position: relative;
+  max-width: 1400px;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.page-title {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 8px 0;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+  flex-shrink: 0;
+}
+.kpi-cards {
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 16px;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+  flex-shrink: 0;
+}
+.total-students {
+  min-width: 240px;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.column-layout-1x-7hjd {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+}
+.comparison {
+  justify-content: flex-start;
+  align-items: center;
+  align-content: flex-start;
+  gap: 0 8px;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+  flex-shrink: 0;
+}
+.dashboard-statistics-section {
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 24px;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+  flex-shrink: 0;
+}
+.charts-wrapper {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 24px 0;
+  position: relative;
+  min-width: 360px;
+  flex: 3 0 0;
+}
+.data-wrapper {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 24px 0;
+  position: relative;
+  min-width: 300px;
+  flex: 2 0 0;
+}
+.title-e-1klzh {
+  color: var(--ig-primary-800);
+  height: max-content;
+  min-width: min-content;
+}
+.text-c-4-2uw {
+  color: var(--ig-gray-700);
+  height: max-content;
+  min-width: min-content;
+}
+.avatar-1 {
+  --igx-avatar-background: var(--ig-info-500);
+}
+.icon {
+  color: var(--ig-info-500-contrast);
+}
+.content {
+  height: max-content;
+  min-width: min-content;
+}
+.title-6qcnz {
+  color: var(--ig-success-500);
+  height: max-content;
+  min-width: min-content;
+}
+.avatar-2 {
+  --igx-avatar-background: var(--ig-success-500);
+}
+.icon_1 {
+  color: var(--ig-success-500-contrast);
+}
+.avatar-3 {
+  --igx-avatar-background: var(--ig-warn-500);
+}
+.icon_2 {
+  color: var(--ig-warn-500-contrast);
+}
+.avatar-4 {
+  --igx-avatar-background: var(--ig-error-500);
+}
+.icon_3 {
+  color: var(--ig-error-500-contrast);
+}
+.avatar-2-2y-2uk {
+  --ig-size: var(--ig-size-small);
+  --igx-avatar-background: var(--ig-error-100);
+}
+.icon_4 {
+  color: var(--ig-error-500);
+}
+.icon-m-3ijqa {
+  --size: 24px;
+  font-size: 24px;
+  width: 24px;
+  height: 24px;
+}
+.avatar-kjou-1 {
+  --ig-size: var(--ig-size-small);
+  --igx-avatar-background: var(--ig-warn-100);
+}
+.icon_5 {
+  color: var(--ig-warn-500);
+}
+.avatar-1_1::part(base) {
+  --igx-avatar-color: var(--ig-info-500-contrast);
+}
+.avatar-2_1::part(base) {
+  --igx-avatar-color: var(--ig-success-500-contrast);
+}
+.avatar-3_1::part(base) {
+  --igx-avatar-color: var(--ig-warn-500-contrast);
+}
+.avatar-4_1::part(base) {
+  --igx-avatar-color: var(--ig-error-500-contrast);
+}
+.avatar-2-2y-2uk_1::part(base) {
+  --igx-avatar-color: var(--ig-error-500);
+}
+.avatar-kjou-1_1::part(base) {
+  --igx-avatar-color: var(--ig-warn-500);
+}
+.progress-chart {
+  min-height: 300px;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.struggling-students-grid {
+  min-height: 250px;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.list-asvvmn {
+  --ig-size: var(--ig-size-medium);
+  height: max-content;
+}

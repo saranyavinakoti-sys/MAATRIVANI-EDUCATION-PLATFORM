@@ -1,0 +1,44 @@
+<igx-navbar class="top-navigation">
+  <igx-navbar-action>
+    <button igxIconButton="flat" [igxToggleAction]="sideDrawer">
+      <igx-icon>
+        menu
+      </igx-icon>
+    </button>
+  </igx-navbar-action>
+  <igx-navbar-title class="navbar-content">
+    <h6 class="h6">
+      MAATRIVAANI - Jharkhand Vernacular Learning Platform
+    </h6>
+  </igx-navbar-title>
+</igx-navbar>
+<div class="row-layout shell-body-layout">
+  <igx-nav-drawer [isOpen]="true" [pin]="true" width="320px" #sideDrawer class="side-drawer">
+    <ng-template igxDrawer>
+      <div igxDrawerItem [active]="isActive(`/authentication-registration`)" [routerLink]="[`/authentication-registration`]">
+        <span>Login &amp; Register</span>
+      </div>
+      <div igxDrawerItem [active]="isActive(`/vernacular-lessons`)" [routerLink]="[`/vernacular-lessons`]">
+        <span>Vernacular Lessons</span>
+      </div>
+      <div igxDrawerItem [active]="isActive(`/ai-voice-translator`)" [routerLink]="[`/ai-voice-translator`]">
+        <span>AI Voice Translator</span>
+      </div>
+      <div igxDrawerItem [active]="isActive(`/interactive-assessments`)" [routerLink]="[`/interactive-assessments`]">
+        <span>Assessments (MCQ &amp; SPEAK)</span>
+      </div>
+      <div igxDrawerItem [active]="isActive(`/teacher-insights`)" [routerLink]="[`/teacher-insights`]">
+        <span>Teacher Insights</span>
+      </div>
+      <div igxDrawerItem [active]="isActive(`/classroom-hub`)" [routerLink]="[`/classroom-hub`]">
+        <span>Classroom Hub</span>
+      </div>
+      <div igxDrawerItem [active]="isActive(`/system-offline-admin`)" [routerLink]="[`/system-offline-admin`]">
+        <span>Offline Catalog &amp; Sync</span>
+      </div>
+    </ng-template>
+  </igx-nav-drawer>
+  <div class="main-view-container">
+    <router-outlet></router-outlet>
+  </div>
+</div>

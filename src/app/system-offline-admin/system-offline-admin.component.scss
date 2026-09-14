@@ -1,0 +1,169 @@
+:host {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 16px 0;
+}
+.row-layout {
+  display: flex;
+}
+.admin-container {
+  justify-content: center;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 0;
+  position: relative;
+  padding: 32px;
+  min-width: 50px;
+  min-height: 50px;
+  flex-shrink: 0;
+}
+.column-layout {
+  display: flex;
+  flex-direction: column;
+}
+.admin-configuration-panel {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 24px 0;
+  position: relative;
+  max-width: 1400px;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.header-section {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 8px 0;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+  flex-shrink: 0;
+}
+.sync-kpis {
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 16px;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+  flex-shrink: 0;
+}
+.offline-cache {
+  min-width: 240px;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.column-layout-yioio {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+}
+.p-2p-kpi-layout {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 0;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+}
+.dialects-grid {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 16px 0;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+  flex-shrink: 0;
+}
+.action-generators {
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 24px;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+  flex-shrink: 0;
+}
+.worksheet-generator {
+  background-color: var(--ig-surface-200);
+  border-radius: 8px;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 16px 0;
+  position: relative;
+  padding: 16px;
+  min-width: 300px;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.title-usxz-5k {
+  color: var(--ig-primary-800);
+  height: max-content;
+  min-width: min-content;
+}
+.text-dw-0haf {
+  color: var(--ig-gray-700);
+  height: max-content;
+  min-width: min-content;
+}
+.av-1 {
+  --igx-avatar-background: var(--ig-success-500);
+}
+.icon {
+  color: var(--ig-success-500-contrast);
+}
+.content {
+  height: max-content;
+  min-width: min-content;
+}
+.av-2 {
+  --igx-avatar-background: var(--ig-warn-500);
+}
+.icon_1 {
+  color: var(--ig-warn-500-contrast);
+}
+.icon_2 {
+  color: var(--ig-primary-500-contrast);
+}
+.av-1_1::part(base) {
+  --igx-avatar-color: var(--ig-success-500-contrast);
+}
+.av-2_1::part(base) {
+  --igx-avatar-color: var(--ig-warn-500-contrast);
+}
+.languages-grid {
+  --ig-size: var(--ig-size-medium);
+  min-height: 300px;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.user-input {
+  height: max-content;
+  min-width: min-content;
+}
+.button-1-4t-6-6u {
+  --foreground: var(--ig-primary-500-contrast);
+  --background: var(--ig-primary-500);
+  --ig-size: var(--ig-size-medium);
+  height: max-content;
+}
+.button-l-5zjib {
+  --ig-size: var(--ig-size-medium);
+  height: max-content;
+}

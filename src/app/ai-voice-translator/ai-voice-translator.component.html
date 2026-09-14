@@ -1,0 +1,187 @@
+<div class="row-layout translator-content">
+  <div class="column-layout core-translation-engine">
+    <div class="row-layout alert-header">
+      <div class="column-layout trans-title">
+        <h3 class="title-isgmf">
+          AI Voice Translator
+        </h3>
+        <p class="text-opr-8fn">
+          Practice speaking in your mother tongue and see translations instantly translated and spoken aloud.
+        </p>
+      </div>
+      <igx-banner class="banner-k-9n-1pk">
+        <p>
+          Low Connectivity Mode: Local speech processing enabled.
+        </p>
+        <igx-banner-actions>
+          <button igxButton="flat" type="button" class="button-za-0c-2-9">
+            Status Detail
+          </button>
+        </igx-banner-actions>
+      </igx-banner>
+    </div>
+    <div class="row-layout languages-selection">
+      <igx-select type="box" placeholder="Select Language" class="select-gpnk-5o">
+        <igx-select-item value="1">
+          Santali (Ol Chiki)
+        </igx-select-item>
+        <igx-select-item value="2">
+          Mundari
+        </igx-select-item>
+        <igx-select-item value="3">
+          Ho
+        </igx-select-item>
+        <igx-select-item value="4">
+          Kurukh
+        </igx-select-item>
+        <igx-select-item value="5">
+          Hindi
+        </igx-select-item>
+        <label igxLabel>Source (Spoken) Language</label>
+      </igx-select>
+      <igx-icon class="icon-pry-3ic">
+        swap_horiz
+      </igx-icon>
+      <igx-select type="box" placeholder="Select Language" class="select-gpnk-5o">
+        <igx-select-item value="1">
+          Hindi
+        </igx-select-item>
+        <igx-select-item value="2">
+          English
+        </igx-select-item>
+        <igx-select-item value="3">
+          Santali
+        </igx-select-item>
+        <igx-select-item value="4">
+          Mundari
+        </igx-select-item>
+        <label igxLabel>Target (Translated) Language</label>
+      </igx-select>
+    </div>
+    <div class="column-layout microphone-section">
+      <h5 class="title-hnqmq">
+        Tap below and start speaking...
+      </h5>
+      <div class="row-layout mic-pulse">
+        <igx-circular-bar [value]="65" [textVisibility]="false" [animationDuration]="500" class="circular-bar-0-6-3yrc"></igx-circular-bar>
+      </div>
+      <igx-chip class="chip-se-2h-7i">
+        <igx-prefix>
+          <igx-icon class="icon-wbov-8">
+            circle
+          </igx-icon>
+        </igx-prefix>
+        <igx-suffix>
+          <igx-icon class="icon-wbov-8">
+            check_circle
+          </igx-icon>
+        </igx-suffix>
+        Auto Speech-End Detection Active
+      </igx-chip>
+    </div>
+    <div class="row-layout source-and-target-display">
+      <igx-card class="source-text-box">
+        <igx-card-header>
+          <h3 igxCardHeaderTitle>
+            Detected Voice Input
+          </h3>
+          <h5 igxCardHeaderSubtitle>
+            Speech Recognition
+          </h5>
+        </igx-card-header>
+        <igx-card-content>
+          <div class="column-layout trans-title">
+            <igx-input-group type="border" class="text-area-kfcn-0j">
+              <label igxLabel>Source Vernacular Text</label>
+              <textarea [(ngModel)]="value" disabled="true" igxInput></textarea>
+              <igx-hint>Recognized via offline models</igx-hint>
+            </igx-input-group>
+            <button igxButton="flat" type="button" class="button-9x-3-1lq">
+              <igx-icon>
+                play_arrow
+              </igx-icon>
+              <span>Hear Original</span>
+            </button>
+          </div>
+        </igx-card-content>
+        <igx-card-actions>
+          <ng-container igxStart></ng-container>
+          <ng-container igxEnd></ng-container>
+        </igx-card-actions>
+      </igx-card>
+      <igx-card class="source-text-box">
+        <igx-card-header>
+          <h3 igxCardHeaderTitle>
+            Translated Output
+          </h3>
+          <h5 igxCardHeaderSubtitle>
+            AI Translation Engine
+          </h5>
+        </igx-card-header>
+        <igx-card-content>
+          <div class="column-layout trans-title">
+            <igx-input-group type="border" class="text-area-kfcn-0j">
+              <label igxLabel>Translated Language</label>
+              <textarea [(ngModel)]="value1" disabled="true" igxInput></textarea>
+              <igx-hint>Translated into Hindi</igx-hint>
+            </igx-input-group>
+            <div class="row-layout audio-status">
+              <button igxButton="contained" type="button" class="button-5-1pvhf">
+                <igx-icon class="icon">
+                  volume_up
+                </igx-icon>
+                <span>Auto Playing...</span>
+              </button>
+              <p class="ig-typography__caption text-0ro-6g">
+                Autoplay blocked? Click to play manually.
+              </p>
+            </div>
+          </div>
+        </igx-card-content>
+        <igx-card-actions>
+          <ng-container igxStart></ng-container>
+          <ng-container igxEnd></ng-container>
+        </igx-card-actions>
+      </igx-card>
+    </div>
+    <div class="column-layout history-logs">
+      <h5 class="title-bwq">
+        Recent Translation Activities
+      </h5>
+      <igx-list class="list-b-6yeoo">
+        <igx-list-item [selected]="this.listB6yeooSelectedItem != null && this.listB6yeooSelectedItem === '0'" (click)="listB6yeooSelectedItem = '0'">
+          <span igxListThumbnail>
+            <igx-avatar shape="circle" class="avatar-ri-2arf">
+              <igx-icon>
+                translate
+              </igx-icon>
+            </igx-avatar>
+          </span>
+          <span igxListLineTitle>Johar (Mundari)</span>
+          <span igxListLineSubTitle>Translated: 'Hello' (English) | Score: 98% Speak Accuracy</span>
+          <span igxListAction>
+            <igx-icon class="icon-0xarfl">
+              play_arrow
+            </igx-icon>
+          </span>
+        </igx-list-item>
+        <igx-list-item [selected]="this.listB6yeooSelectedItem != null && this.listB6yeooSelectedItem === '1'" (click)="listB6yeooSelectedItem = '1'">
+          <span igxListThumbnail>
+            <igx-avatar shape="circle" class="avatar-ri-2arf">
+              <igx-icon>
+                translate
+              </igx-icon>
+            </igx-avatar>
+          </span>
+          <span igxListLineTitle>Santhal Pargana Ko (Santali)</span>
+          <span igxListLineSubTitle>Translated: 'To the Santhal region' (Hindi) | Score: 92% Speak Accuracy</span>
+          <span igxListAction>
+            <igx-icon class="icon-0xarfl">
+              play_arrow
+            </igx-icon>
+          </span>
+        </igx-list-item>
+      </igx-list>
+    </div>
+  </div>
+</div>

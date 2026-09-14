@@ -1,0 +1,218 @@
+:host {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 16px 0;
+}
+.row-layout {
+  display: flex;
+}
+.translator-content {
+  justify-content: center;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 0;
+  position: relative;
+  padding: 32px;
+  min-width: 50px;
+  min-height: 50px;
+  flex-shrink: 0;
+}
+.column-layout {
+  display: flex;
+  flex-direction: column;
+}
+.core-translation-engine {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 24px 0;
+  position: relative;
+  max-width: 1200px;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.alert-header {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: flex-start;
+  gap: 12px 0;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+  flex-shrink: 0;
+}
+.trans-title {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 8px 0;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+}
+.languages-selection {
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: flex-start;
+  gap: 16px;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+  flex-shrink: 0;
+}
+.microphone-section {
+  background-color: var(--ig-surface-200);
+  border-radius: 16px;
+  justify-content: center;
+  align-items: center;
+  align-content: flex-start;
+  gap: 16px 0;
+  position: relative;
+  padding: 24px;
+  min-width: 50px;
+  min-height: 50px;
+  flex-shrink: 0;
+}
+.mic-pulse {
+  justify-content: center;
+  align-items: center;
+  align-content: flex-start;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+  flex-shrink: 0;
+}
+.source-and-target-display {
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 16px;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+  flex-shrink: 0;
+}
+.source-text-box {
+  min-width: 300px;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.audio-status {
+  justify-content: space-between;
+  align-items: center;
+  align-content: flex-start;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+  flex-shrink: 0;
+}
+.history-logs {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 12px 0;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+  flex-shrink: 0;
+}
+.title-isgmf {
+  color: var(--ig-primary-800);
+  height: max-content;
+  min-width: min-content;
+}
+.text-opr-8fn {
+  color: var(--ig-gray-700);
+  height: max-content;
+  min-width: min-content;
+}
+.icon-pry-3ic {
+  --size: 24px;
+  font-size: 24px;
+  width: 24px;
+  height: 24px;
+  color: var(--ig-primary-500);
+}
+.title-hnqmq {
+  color: var(--ig-gray-800);
+  height: max-content;
+  min-width: min-content;
+}
+.chip-se-2h-7i {
+  --ig-size: var(--ig-size-large);
+  width: max-content;
+  height: max-content;
+}
+.icon-wbov-8 {
+  --size: 24px;
+  font-size: 24px;
+  width: 24px;
+  height: 24px;
+  color: var(--ig-success-500);
+}
+.icon {
+  color: var(--ig-success-500-contrast);
+}
+.text-0ro-6g {
+  color: var(--ig-gray-600);
+  height: max-content;
+  min-width: min-content;
+}
+.title-bwq {
+  height: max-content;
+  min-width: min-content;
+}
+.avatar-ri-2arf {
+  --ig-size: var(--ig-size-small);
+  --igx-avatar-background: var(--ig-info-100);
+}
+.icon-0xarfl {
+  --size: 24px;
+  font-size: 24px;
+  width: 24px;
+  height: 24px;
+}
+.banner-k-9n-1pk {
+  height: max-content;
+  min-width: min-content;
+  flex-shrink: 0;
+}
+.circular-bar-0-6-3yrc {
+  --diameter: 140;
+  width: max-content;
+  height: max-content;
+}
+.button-za-0c-2-9 {
+  --ig-size: var(--ig-size-medium);
+  height: max-content;
+}
+.select-gpnk-5o {
+  min-width: 260px;
+  flex-shrink: 0;
+}
+.text-area-kfcn-0j {
+  height: max-content;
+  min-width: min-content;
+}
+.button-9x-3-1lq {
+  --ig-size: var(--ig-size-small);
+  height: max-content;
+}
+.button-5-1pvhf {
+  --foreground: var(--ig-success-500-contrast);
+  --background: var(--ig-success-500);
+  --ig-size: var(--ig-size-small);
+  height: max-content;
+  flex-shrink: 0;
+}
+.list-b-6yeoo {
+  --ig-size: var(--ig-size-medium);
+  height: max-content;
+}

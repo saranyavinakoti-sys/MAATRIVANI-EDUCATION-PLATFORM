@@ -1,0 +1,164 @@
+<div class="row-layout assessments-container">
+  <div class="column-layout assessments-content">
+    <div class="column-layout page-title">
+      <h3 class="title-fib-4th">
+        Interactive Assessments &amp; Activities
+      </h3>
+      <p class="text-2g-2op">
+        Test your vernacular speaking, comprehension, and vocabulary. Earn stars and track your learning progress!
+      </p>
+    </div>
+    <div class="row-layout stats-overview">
+      <igx-chip class="chip-txtckr">
+        <igx-prefix>
+          <igx-icon class="icon-1ttdgm">
+            stars
+          </igx-icon>
+        </igx-prefix>
+        Total Stars Earned: 120
+      </igx-chip>
+      <igx-chip class="chip-txtckr">
+        <igx-prefix>
+          <igx-icon class="icon-bv-6-3-7">
+            assignment_turned_in
+          </igx-icon>
+        </igx-prefix>
+        Completed Quizzes: 14
+      </igx-chip>
+    </div>
+    <div class="row-layout assessments-grid">
+      <igx-card class="picture-quiz">
+        <igx-card-media height="200px">
+          <img src="/assets/illustration-of-a-friendly-car-c85555b2dce6.png" alt="" class="image" />
+        </igx-card-media>
+        <igx-card-header>
+          <h3 igxCardHeaderTitle>
+            Identify the Animal
+          </h3>
+          <h5 igxCardHeaderSubtitle>
+            Vocabulary MCQ
+          </h5>
+        </igx-card-header>
+        <igx-card-content>
+          <div class="column-layout column-layout-6f-1qp">
+            <p class="text-ahs-3kb">
+              What is this animal called in Santali?
+            </p>
+            <igx-radio-group alignment="vertical" [(ngModel)]="value" class="radio-group-fsgi-1r">
+              <igx-radio [value]="1">
+                Sadam (Horse)
+              </igx-radio>
+              <igx-radio [value]="2">
+                Hathi (Elephant)
+              </igx-radio>
+              <igx-radio [value]="3">
+                Tarup (Leopard)
+              </igx-radio>
+            </igx-radio-group>
+          </div>
+        </igx-card-content>
+        <igx-card-actions>
+          <ng-container igxStart>
+            <button igxButton="contained" type="button" class="button-qqvtcvj">
+              Submit Answer
+            </button>
+          </ng-container>
+          <ng-container igxEnd></ng-container>
+        </igx-card-actions>
+      </igx-card>
+      <igx-card class="picture-quiz">
+        <igx-card-media height="200px">
+          <img src="/assets/graphic-of-speech-sound-waves-59f92e33a3b1.png" alt="" class="image" />
+        </igx-card-media>
+        <igx-card-header>
+          <h3 igxCardHeaderTitle>
+            Pronounce: Johar
+          </h3>
+          <h5 igxCardHeaderSubtitle>
+            Speaking Assessment
+          </h5>
+        </igx-card-header>
+        <igx-card-content>
+          <div class="column-layout column-layout-6f-1qp">
+            <p class="text-ahs-3kb">
+              Listen to the correct greeting, then tap the mic and repeat it clearly.
+            </p>
+            <div class="row-layout audio-action-row">
+              <button igxButton="outlined" type="button" class="button-og-8k-0m">
+                <igx-icon>
+                  volume_up
+                </igx-icon>
+                <span>Listen Model</span>
+              </button>
+              <button igxButton="contained" type="button" class="button-hl-6g-4f">
+                <igx-icon class="icon">
+                  mic
+                </igx-icon>
+                <span>Record Now</span>
+              </button>
+            </div>
+            <div class="row-layout audio-action-row">
+              <p class="ig-typography__caption text-ahs-3kb">
+                Last Attempt: 94% Match
+              </p>
+              <igc-rating [(ngModel)]="ngModel" readonly="true" class="rating-d-6-3rjg"></igc-rating>
+            </div>
+          </div>
+        </igx-card-content>
+        <igx-card-actions>
+          <ng-container igxStart>
+            <button igxButton="contained" type="button" class="button-qqvtcvj">
+              Submit Speak Recording
+            </button>
+          </ng-container>
+          <ng-container igxEnd></ng-container>
+        </igx-card-actions>
+      </igx-card>
+      <igx-card class="picture-quiz">
+        <igx-card-media height="200px">
+          <img src="/assets/illustration-of-cute-child-car-bb5c453cfb63.png" alt="" class="image" />
+        </igx-card-media>
+        <igx-card-header>
+          <h3 igxCardHeaderTitle>
+            Listening Comprehension
+          </h3>
+          <h5 igxCardHeaderSubtitle>
+            Audio MCQ
+          </h5>
+        </igx-card-header>
+        <igx-card-content>
+          <div class="column-layout column-layout-6f-1qp">
+            <p class="text-ahs-3kb">
+              Listen to the speaker counting in Mundari, and select the correct number.
+            </p>
+            <button igxButton="outlined" type="button" class="button-noc-7xq">
+              <igx-icon>
+                volume_up
+              </igx-icon>
+              <span>Play Question Audio</span>
+            </button>
+            <igx-radio-group alignment="vertical" [(ngModel)]="value1" class="radio-group-fsgi-1r">
+              <igx-radio [value]="1">
+                Number 3
+              </igx-radio>
+              <igx-radio [value]="2">
+                Number 5
+              </igx-radio>
+              <igx-radio [value]="3">
+                Number 7
+              </igx-radio>
+            </igx-radio-group>
+          </div>
+        </igx-card-content>
+        <igx-card-actions>
+          <ng-container igxStart>
+            <button igxButton="contained" type="button" class="button-qqvtcvj">
+              Submit Answer
+            </button>
+          </ng-container>
+          <ng-container igxEnd></ng-container>
+        </igx-card-actions>
+      </igx-card>
+    </div>
+  </div>
+</div>

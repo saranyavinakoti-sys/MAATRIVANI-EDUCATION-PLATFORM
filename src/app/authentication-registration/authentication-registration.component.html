@@ -1,0 +1,290 @@
+<div class="row-layout login-area">
+  <div class="column-layout platform-intro">
+    <img src="/assets/group-of-primary-school-childr-b95252edb8fc.png" alt="" class="jharkhand-children-learning" />
+    <h3 class="title-or-6sj">
+      MAATRIVAANI
+    </h3>
+    <p class="text-bk-4e-4">
+      AI-Powered Vernacular Primary Education Platform specifically optimized for the unique regional languages of Jharkhand. Functional even in the lowest connectivity zones.
+    </p>
+    <div class="row-layout feature-badges">
+      <igx-chip class="chip-sbnk-9">
+        <igx-prefix>
+          <igx-icon class="icon-esh-3k-3">
+            mic
+          </igx-icon>
+        </igx-prefix>
+        Speech to Text
+      </igx-chip>
+      <igx-chip class="chip-sbnk-9">
+        <igx-prefix>
+          <igx-icon class="icon-esh-3k-3">
+            wifi_off
+          </igx-icon>
+        </igx-prefix>
+        Offline-First
+      </igx-chip>
+      <igx-chip class="chip-sbnk-9">
+        <igx-prefix>
+          <igx-icon class="icon-esh-3k-3">
+            school
+          </igx-icon>
+        </igx-prefix>
+        Local Dialects
+      </igx-chip>
+    </div>
+  </div>
+  <div class="column-layout auth-panel">
+    <igx-tabs tabAlignment="justify" class="tabs-vov-1-2">
+      <igx-tab-item [selected]="true" class="tabs-tab-item-1-2bpm">
+        <igx-tab-header>
+          <igx-icon igxTabHeaderIcon>
+            info
+          </igx-icon>
+          <span igxTabHeaderLabel>Student Zone</span>
+        </igx-tab-header>
+        <igx-tab-content class="row-layout tabs-item-content-4s-8caa">
+          <form class="column-layout student-login-form">
+            <div class="column-layout student-credentials">
+              <h5 class="content">
+                Student Login &amp; Registration
+              </h5>
+              <igx-input-group type="border" class="user-input">
+                <igx-prefix>
+                  <igx-icon class="icon-esh-3k-3">
+                    person
+                  </igx-icon>
+                </igx-prefix>
+                <input type="text" [(ngModel)]="value" placeholder="Enter ID or Email" required="true" igxInput #igxInput />
+                <label igxLabel>Student ID / Email</label>
+                @if (igxInput.validity.valueMissing) {
+                  <igx-hint>This field is required</igx-hint>
+                }
+              </igx-input-group>
+              <igx-input-group type="border" class="user-input">
+                <igx-prefix>
+                  <igx-icon class="icon-esh-3k-3">
+                    lock
+                  </igx-icon>
+                </igx-prefix>
+                <input type="password" [(ngModel)]="value1" placeholder="••••••••" required="true" igxInput #igxInput1 />
+                <label igxLabel>Password</label>
+                @if (igxInput1.validity.valueMissing) {
+                  <igx-hint>This field is required</igx-hint>
+                }
+              </igx-input-group>
+              <igx-input-group type="border" class="user-input">
+                <igx-prefix>
+                  <igx-icon class="icon-esh-3k-3">
+                    domain
+                  </igx-icon>
+                </igx-prefix>
+                <input type="text" [(ngModel)]="value2" placeholder="e.g. Govt. Primary School, Khunti" required="true" igxInput #igxInput2 />
+                <label igxLabel>School Name</label>
+                @if (igxInput2.validity.valueMissing) {
+                  <igx-hint>This field is required</igx-hint>
+                }
+              </igx-input-group>
+              <igx-select type="border" placeholder="Select your grade" required="true" class="user-input">
+                <igx-select-item value="1">
+                  Class 1
+                </igx-select-item>
+                <igx-select-item value="2">
+                  Class 2
+                </igx-select-item>
+                <igx-select-item value="3">
+                  Class 3
+                </igx-select-item>
+                <igx-select-item value="4">
+                  Class 4
+                </igx-select-item>
+                <igx-select-item value="5">
+                  Class 5
+                </igx-select-item>
+                <label igxLabel>Grade / Class</label>
+              </igx-select>
+              <igx-select type="border" placeholder="Choose Mother Tongue" required="true" class="user-input">
+                <igx-select-item value="1">
+                  Santali (Ol Chiki)
+                </igx-select-item>
+                <igx-select-item value="2">
+                  Mundari (Bani Hisir)
+                </igx-select-item>
+                <igx-select-item value="3">
+                  Ho (Warang Chiti)
+                </igx-select-item>
+                <igx-select-item value="4">
+                  Kurukh (Oraon)
+                </igx-select-item>
+                <igx-select-item value="5">
+                  Nagpuri / Sadri
+                </igx-select-item>
+                <igx-select-item value="6">
+                  Khortha / Kurmali
+                </igx-select-item>
+                <label igxLabel>Mother Tongue</label>
+              </igx-select>
+              <igx-select type="border" placeholder="Choose Learning Medium" required="true" class="user-input">
+                <igx-select-item value="1">
+                  Hindi
+                </igx-select-item>
+                <igx-select-item value="2">
+                  English
+                </igx-select-item>
+                <igx-select-item value="3">
+                  Odia
+                </igx-select-item>
+                <igx-select-item value="4">
+                  Bengali
+                </igx-select-item>
+                <label igxLabel>Preferred Language</label>
+              </igx-select>
+              <button igxButton="contained" type="button" class="button-5x-8j-1r">
+                <igx-icon class="icon">
+                  login
+                </igx-icon>
+                <span>Enter Student Portal</span>
+              </button>
+            </div>
+          </form>
+        </igx-tab-content>
+      </igx-tab-item>
+      <igx-tab-item class="tabs-tab-item-1-2bpm">
+        <igx-tab-header>
+          <igx-icon igxTabHeaderIcon>
+            info
+          </igx-icon>
+          <span igxTabHeaderLabel>Teacher Zone</span>
+        </igx-tab-header>
+        <igx-tab-content class="row-layout tabs-item-content-4s-8caa">
+          <form class="column-layout student-login-form">
+            <div class="column-layout student-credentials">
+              <h5 class="content">
+                Teacher Login &amp; Registration
+              </h5>
+              <igx-input-group type="border" class="user-input">
+                <igx-prefix>
+                  <igx-icon class="icon-esh-3k-3">
+                    badge
+                  </igx-icon>
+                </igx-prefix>
+                <input type="text" [(ngModel)]="value3" placeholder="Enter Teacher ID" required="true" igxInput #igxInput3 />
+                <label igxLabel>Teacher ID / Email</label>
+                @if (igxInput3.validity.valueMissing) {
+                  <igx-hint>This field is required</igx-hint>
+                }
+              </igx-input-group>
+              <igx-input-group type="border" class="user-input">
+                <igx-prefix>
+                  <igx-icon class="icon-esh-3k-3">
+                    lock
+                  </igx-icon>
+                </igx-prefix>
+                <input type="password" [(ngModel)]="value4" placeholder="••••••••" required="true" igxInput #igxInput4 />
+                <label igxLabel>Password</label>
+                @if (igxInput4.validity.valueMissing) {
+                  <igx-hint>This field is required</igx-hint>
+                }
+              </igx-input-group>
+              <igx-input-group type="border" class="user-input">
+                <igx-prefix>
+                  <igx-icon class="icon-esh-3k-3">
+                    domain
+                  </igx-icon>
+                </igx-prefix>
+                <input type="text" [(ngModel)]="value5" placeholder="e.g. Khunti Govt. High School" required="true" igxInput #igxInput5 />
+                <label igxLabel>School Name</label>
+                @if (igxInput5.validity.valueMissing) {
+                  <igx-hint>This field is required</igx-hint>
+                }
+              </igx-input-group>
+              <igx-input-group type="border" class="user-input">
+                <igx-prefix>
+                  <igx-icon class="icon-esh-3k-3">
+                    book
+                  </igx-icon>
+                </igx-prefix>
+                <input type="text" [(ngModel)]="value6" placeholder="e.g. Language, Mathematics" required="true" igxInput #igxInput6 />
+                <label igxLabel>Subject Specialty</label>
+                @if (igxInput6.validity.valueMissing) {
+                  <igx-hint>This field is required</igx-hint>
+                }
+              </igx-input-group>
+              <igx-select type="border" placeholder="Select Teaching Dialect" required="true" class="user-input">
+                <igx-select-item value="1">
+                  Santali
+                </igx-select-item>
+                <igx-select-item value="2">
+                  Mundari
+                </igx-select-item>
+                <igx-select-item value="3">
+                  Ho
+                </igx-select-item>
+                <igx-select-item value="4">
+                  Kurukh
+                </igx-select-item>
+                <igx-select-item value="5">
+                  Nagpuri
+                </igx-select-item>
+                <label igxLabel>Primary Teaching Language</label>
+              </igx-select>
+              <igx-select type="border" placeholder="UI Language" required="true" class="user-input">
+                <igx-select-item value="1">
+                  Hindi
+                </igx-select-item>
+                <igx-select-item value="2">
+                  English
+                </igx-select-item>
+                <label igxLabel>Preferred Interface Language</label>
+              </igx-select>
+              <button igxButton="contained" type="button" class="button-7-6bsn">
+                <igx-icon class="icon_1">
+                  supervisor_account
+                </igx-icon>
+                <span>Enter Teacher Console</span>
+              </button>
+            </div>
+          </form>
+        </igx-tab-content>
+      </igx-tab-item>
+      <igx-tab-item class="tabs-tab-item-1-2bpm">
+        <igx-tab-header>
+          <igx-icon igxTabHeaderIcon>
+            info
+          </igx-icon>
+          <span igxTabHeaderLabel>Admin Bypass</span>
+        </igx-tab-header>
+        <igx-tab-content class="row-layout tabs-item-content-4s-8caa">
+          <div class="column-layout admin-quick-access">
+            <h5 class="content">
+              Quick Demo Bypass Mode
+            </h5>
+            <p class="ig-typography__body-2 content">
+              For demo evaluation, easily switch views without input credentials.
+            </p>
+            <div class="row-layout feature-badges">
+              <button igxButton="outlined" type="button" [routerLink]="[`/vernacular-lessons`]" class="bp-student">
+                <igx-icon>
+                  school
+                </igx-icon>
+                <span>Demo Student</span>
+              </button>
+              <button igxButton="outlined" type="button" [routerLink]="[`/teacher-insights`]" class="bp-student">
+                <igx-icon>
+                  trending_up
+                </igx-icon>
+                <span>Demo Teacher</span>
+              </button>
+              <button igxButton="outlined" type="button" [routerLink]="[`/system-offline-admin`]" class="bp-student">
+                <igx-icon>
+                  settings
+                </igx-icon>
+                <span>Demo Admin</span>
+              </button>
+            </div>
+          </div>
+        </igx-tab-content>
+      </igx-tab-item>
+    </igx-tabs>
+  </div>
+</div>

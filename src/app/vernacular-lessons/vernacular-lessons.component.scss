@@ -1,0 +1,135 @@
+:host {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 16px 0;
+}
+.row-layout {
+  display: flex;
+}
+.learn-container {
+  justify-content: center;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 0;
+  position: relative;
+  padding: 32px;
+  min-width: 50px;
+  min-height: 50px;
+  flex-shrink: 0;
+}
+.column-layout {
+  display: flex;
+  flex-direction: column;
+}
+.learn-core {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 24px 0;
+  position: relative;
+  max-width: 1400px;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.page-title {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 8px 0;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+  flex-shrink: 0;
+}
+.dialect-filters {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: flex-start;
+  gap: 12px;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+  flex-shrink: 0;
+}
+.lessons-grid {
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 24px;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+  flex-shrink: 0;
+}
+.santali-alphabets {
+  min-width: 280px;
+  max-width: 340px;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.column-layout-iox-5us {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 8px 0;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+}
+.card-stats {
+  justify-content: space-between;
+  align-items: center;
+  align-content: flex-start;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+  flex-shrink: 0;
+}
+.title-np-8krl {
+  color: var(--ig-primary-800);
+  height: max-content;
+  min-width: min-content;
+}
+.text-nii-5-4g {
+  color: var(--ig-gray-700);
+  height: max-content;
+  min-width: min-content;
+}
+.image {
+  height: 100%;
+  min-height: 100%;
+  max-height: 100%;
+}
+.text-t-7-0x-1 {
+  height: max-content;
+  min-width: min-content;
+}
+.icon {
+  color: var(--ig-primary-500-contrast);
+}
+.select-7j-0pb {
+  min-width: 280px;
+  flex-shrink: 0;
+}
+.button-group-b-1tnfw {
+  --ig-size: var(--ig-size-medium);
+  height: max-content;
+  min-width: min-content;
+  flex-shrink: 0;
+}
+.button-0s-0uyf {
+  --foreground: var(--ig-primary-500-contrast);
+  --background: var(--ig-primary-500);
+  --ig-size: var(--ig-size-small);
+  height: max-content;
+}
+.badge-e-5r-4-9u {
+  width: max-content;
+  height: max-content;
+}
